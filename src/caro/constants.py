@@ -1,0 +1,11 @@
+BOARD_SIZE = 15
+WIN_LENGTH = 5
+
+X_PIECE = 'X'
+O_PIECE = 'O'
+EMPTY_CELL = ' '
+
+X_WIN = 0
+O_WIN = 1
+DRAW = 2
+NOT_FINISH = 3

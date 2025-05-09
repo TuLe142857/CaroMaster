@@ -1,3 +1,9 @@
+# pycharm
+.idea/
+
+# game record
+game_records
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
