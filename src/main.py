@@ -8,6 +8,9 @@ from minimax import MiniMax
 from evaluate import evaluate
 
 DEFAULT_GAME_RECORD_DIRECTORY = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'game_records'))
+if not os.path.exists(DEFAULT_GAME_RECORD_DIRECTORY):
+    os.makedirs(DEFAULT_GAME_RECORD_DIRECTORY)
+
 def get_game_record_path(filename):
     return os.path.join(DEFAULT_GAME_RECORD_DIRECTORY, filename)
 
@@ -73,6 +76,6 @@ if __name__ == '__main__':
         SAVE GAME RECORD
     ---------------------------------
     '''
-    file_name = f"game {datetime.fromtimestamp(int(time.time()))}.json"
+    file_name = f"game_record_{int(time.time())}.json"
     caro.GameRecord.save_to_file(get_game_record_path(file_name), game_record)
     print(f"Game record was saved to '{get_game_record_path(file_name)}'")
