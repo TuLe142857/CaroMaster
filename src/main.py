@@ -97,7 +97,7 @@ if __name__ == '__main__':
             for rm in random_move_range:
                 agents.append(
                     MiniMax(
-                        name=f"m_depth{d}_search_radius{sr}_random_move{rm}",
+                        name=f"minimax_depth{d}_search_radius{sr}_random_move{rm}",
                         evaluate_function=evaluate,
                         depth=d, search_radius=sr,
                         random_move=rm)
