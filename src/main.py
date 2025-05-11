@@ -1,5 +1,6 @@
 import os
 import time
+import pygame
 from app import App
 from minimax import MiniMax
 from evaluate import evaluate
@@ -120,6 +121,7 @@ if __name__ == '__main__':
                 number_of_game=2,
                 first_turn=caro.X_PIECE
             )
+            pygame.display.quit()
 
         # run tournament
         elif choice == 2:
