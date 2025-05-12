@@ -26,7 +26,7 @@ Team members:
 Window
 
     python -m venv .venv
-    .venv\Script\activate
+    .venv\Scripts\activate
 
 Macos/Linux
 
